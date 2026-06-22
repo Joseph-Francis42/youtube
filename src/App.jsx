@@ -49,10 +49,11 @@ const darkTheme = createTheme({
 
 const App = () => {
   const [sidebarExpanded, setSidebarExpanded] = useState(true);
+  const basename = import.meta.env.DEV ? '/' : '/youtube';
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Box sx={{ backgroundColor: '#0f0f0f', minHeight: '100vh', color: '#fff' }}>
           <Navbar sidebarExpanded={sidebarExpanded} setSidebarExpanded={setSidebarExpanded} />
           <Routes>
