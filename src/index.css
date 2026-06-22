@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fc1507;
+}
+
+/* Category Button Hover Animation */
+.category-btn:hover {
+  background-color: #fc1507 !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+.category-btn:hover span {
+  color: white !important;
+}
+
+/* Search Bar Transition */
+.search-bar {
+  transition: border 0.3s ease;
+}
+
+/* React Player Custom Responsiveness */
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Video Grid and Card Animations */
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
